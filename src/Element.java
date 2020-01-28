@@ -1,5 +1,3 @@
-package BackPackProblem;
-
 public class Element {
     private double weight, value;
     private String name;
@@ -8,6 +6,11 @@ public class Element {
         this.weight = weight;
         this.value = value;
         this.name = name;
+    }
+    public Element(Element orig) {
+        this.weight = orig.weight;
+        this.value = orig.value;
+        this.name = orig.name;
     }
 
     public double getWeight() {
