@@ -1,13 +1,16 @@
 public class Main {
 
-    private static int[] backPack;
+    private static boolean[] gene;
 
     public Main(){
-            backPack = new int[100];
+
+
 
     }
 
     public static void main(String[] args) {
+
+
 
     }
 }
