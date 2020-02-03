@@ -1,19 +1,19 @@
+import java.util.ArrayList;
+import java.util.Vector;
+
 public class Individual {
 
-    private String gene;
+    private double gene;
     private int score;
-    private String goal; //the answer.
+    private double goal; //the answer.
 
     //random individual
-    public Individual(String goal){
-        this.goal = goal;
-        gene = "";
-        while(gene.length() < goal.length()){
-            gene += (char)(Math.random()*26 + (int)'a');
+    public Individual(double[] elements, int maxWeight) {
+        while(gene < maxWeight){
+            gene += elements;
         }
         calculateScore();
     }
-
     public Individual(Individual orig){ //copy constructor
         gene = orig.gene;
         goal = orig.goal;
